@@ -6,6 +6,7 @@
 }
 
 body {
+  background: #121725;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,7 +38,7 @@ body .container .dots {
   display: none;
 }
 
-body .container .tablet-host {
+body .container .host {
   display: none;
 }
 
@@ -128,6 +129,7 @@ body .container footer input {
 }
 
 body .container footer .submit {
+  cursor: pointer;
   margin-bottom: 94px;
   background-color: #54e6af;
   border-radius: 30px;
@@ -143,8 +145,13 @@ body .container footer .submit p {
   font-weight: bold;
 }
 
+body .container footer .submit:hover {
+  background-color: #b3ffe2;
+}
+
 @media (min-width: 768px) {
   body .container {
+    max-height: 1024px;
     position: relative;
     background-image: none;
     background: #121725;
@@ -158,7 +165,7 @@ body .container footer .submit p {
   body .container .opacity {
     background: none;
   }
-  body .container .tablet-host {
+  body .container .host {
     z-index: -1;
     display: block;
     position: absolute;
@@ -237,6 +244,39 @@ body .container footer .submit p {
     height: 46px;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container {
+    max-width: 1440px;
+    max-height: 900px;
+  }
+  body .container h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  body .container .dots {
+    bottom: 78px;
+    left: auto;
+    right: 0;
+  }
+  body .container .logo {
+    top: 102px;
+    left: 165px;
+  }
+  body .container .host {
+    top: 130px;
+  }
+  body .container .host img {
+    content: url("/assets/images/desktop/image-host.jpg");
+  }
+  body .container main {
+    margin-left: 165px;
+    margin-top: 262px;
+  }
+  body .container footer {
+    left: 165px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
