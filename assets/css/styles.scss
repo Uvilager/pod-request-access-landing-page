@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow: hidden;
     background: $background-color;
     position: relative;
     display: flex;
@@ -87,6 +88,15 @@ body {
             }
         }
         footer {
+            margin: 0 auto;
+            max-width: 326px;
+            .error {
+                visibility: hidden;
+                color: $error-red;
+                font-weight: bold;
+                font-size: 12px;
+                margin-top: 8px;
+            }
             input {
                 margin-bottom: 16px;
                 background-color: $input-bg;
@@ -102,7 +112,6 @@ body {
             }
             .submit {
                 cursor: pointer;
-                margin-bottom: 94px;
                 background-color: $title-green;
                 border-radius: 30px;
                 width: 326px;
@@ -116,7 +125,7 @@ body {
                 }
             }
             .submit:hover {
-                background-color: #b3ffe2;
+                background-color: $hover-green;
             }
         }
     }
@@ -126,6 +135,9 @@ body {
             position: relative;
             background-image: none;
             background: $background-color;
+            .error {
+                margin-left: 32px;
+            }
             .dots {
                 display: inline-block;
                 position: absolute;
@@ -191,6 +203,7 @@ body {
                 }
             }
             footer {
+                max-width: none;
                 position: relative;
                 width: 427px;
                 text-align: left;

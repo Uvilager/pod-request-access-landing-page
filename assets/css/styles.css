@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow: hidden;
   background: #121725;
   position: relative;
   display: -webkit-box;
@@ -114,6 +115,19 @@ body .container main .logo-wrapper .pocket {
   height: 15px;
 }
 
+body .container footer {
+  margin: 0 auto;
+  max-width: 326px;
+}
+
+body .container footer .error {
+  visibility: hidden;
+  color: #fb3e3e;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
 body .container footer input {
   margin-bottom: 16px;
   background-color: #2c344b;
@@ -130,7 +144,6 @@ body .container footer input {
 
 body .container footer .submit {
   cursor: pointer;
-  margin-bottom: 94px;
   background-color: #54e6af;
   border-radius: 30px;
   width: 326px;
@@ -155,6 +168,9 @@ body .container footer .submit:hover {
     position: relative;
     background-image: none;
     background: #121725;
+  }
+  body .container .error {
+    margin-left: 32px;
   }
   body .container .dots {
     display: inline-block;
@@ -221,6 +237,7 @@ body .container footer .submit:hover {
     height: 26px;
   }
   body .container footer {
+    max-width: none;
     position: relative;
     width: 427px;
     text-align: left;
