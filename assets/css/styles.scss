@@ -8,7 +8,7 @@
 
 body {
     overflow: hidden;
-    background: $background-color;
+    background: $backgroundColor;
     position: relative;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ body {
                 text-transform: uppercase;
                 font-size: 26px;
                 line-height: 38px;
-                color: $title-green;
+                color: $titleGreen;
                 span {
                     color: $white;
                 }
@@ -59,7 +59,7 @@ body {
                 padding: 0 24px;
                 line-height: 25px;
                 font-size: 15px;
-                color: $p-gray;
+                color: $paragraphGray;
                 margin-bottom: 33px;
             }
             .logo-wrapper {
@@ -92,14 +92,14 @@ body {
             max-width: 326px;
             .error {
                 visibility: hidden;
-                color: $error-red;
+                color: $errorRed;
                 font-weight: bold;
                 font-size: 12px;
                 margin-top: 8px;
             }
             input {
                 margin-bottom: 16px;
-                background-color: $input-bg;
+                background-color: $inputBackground;
                 border: none;
                 border-radius: 30px;
                 width: 326px;
@@ -112,12 +112,12 @@ body {
             }
             .submit {
                 cursor: pointer;
-                background-color: $title-green;
+                background-color: $titleGreen;
                 border-radius: 30px;
                 width: 326px;
                 height: 48px;
                 border: none;
-                color: $background-color;
+                color: $backgroundColor;
                 p {
                     font-size: 14px;
                     line-height: 28px;
@@ -125,7 +125,7 @@ body {
                 }
             }
             .submit:hover {
-                background-color: $hover-green;
+                background-color: $hoverGreen;
             }
         }
     }
@@ -134,7 +134,7 @@ body {
             max-height: 1024px;
             position: relative;
             background-image: none;
-            background: $background-color;
+            background: $backgroundColor;
             .error {
                 margin-left: 32px;
             }
@@ -164,7 +164,7 @@ body {
                 padding-top: 93px;
                 height: 510px;
                 width: 635px;
-                background: $background-color;
+                background: $backgroundColor;
                 text-align: left;
                 margin-top: 258px;
                 margin-left: 39px;
