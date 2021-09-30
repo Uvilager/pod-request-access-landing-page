@@ -1,0 +1,265 @@
+@import '_variables.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: $backgroundColor;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+    .container {
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background-image: url('/assets/images/mobile/image-host.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-width: 768px) {
+            max-height: 1024px;
+            position: relative;
+            background-image: none;
+            background: $backgroundColor;
+        }
+        @media (min-width: 1024px) {
+            max-width: 1440px;
+            max-height: 900px;
+            h1 {
+                font-size: 52px;
+                line-height: 62px;
+            }
+        }
+        .dots {
+            display: none;
+            @media (min-width: 768px) {
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                left: 30px;
+            }
+            @media (min-width: 1024px) {
+                bottom: 78px;
+                left: auto;
+                right: 0;
+            }
+        }
+        .host {
+            display: none;
+            @media (min-width: 768px) {
+                z-index: -1;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            @media (min-width: 1024px) {
+                top: 130px;
+                img {
+                    content: url('/assets/images/desktop/image-host.jpg');
+                }
+            }
+        }
+        .logo {
+            margin: 62px auto 57px auto;
+            @media (min-width: 768px) {
+                margin: 0;
+                top: 50px;
+                left: 39px;
+                position: absolute;
+            }
+            @media (min-width: 1024px) {
+                top: 102px;
+                left: 165px;
+            }
+        }
+        .opacity {
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+            height: 100%;
+            width: 100%;
+            background: rgba($color: #121725, $alpha: 0.9);
+            @media (min-width: 768px) {
+                background: none;
+            }
+        }
+        main {
+            @media (min-width: 768px) {
+                padding-top: 93px;
+                height: 510px;
+                width: 635px;
+                background: $backgroundColor;
+                text-align: left;
+                margin-top: 258px;
+                margin-left: 39px;
+            }
+            @media (min-width: 1024px) {
+                margin-left: 165px;
+                margin-top: 262px;
+            }
+            h1 {
+                margin-bottom: 16px;
+                font-weight: lighter;
+                padding: 0 24px;
+                text-transform: uppercase;
+                font-size: 26px;
+                line-height: 38px;
+                color: $titleGreen;
+                span {
+                    color: $white;
+                }
+                @media (min-width: 768px) {
+                    margin-bottom: 31px;
+                    font-size: 48px;
+                    line-height: 56px;
+                    padding: 0;
+                }
+            }
+            p {
+                font-weight: lighter;
+                padding: 0 24px;
+                line-height: 25px;
+                font-size: 15px;
+                color: $paragraphGray;
+                margin-bottom: 33px;
+                @media (min-width: 768px) {
+                    width: 445px;
+                    font-size: 18px;
+                    line-height: 28px;
+                    padding: 0;
+                    margin-bottom: 160px;
+                }
+            }
+            .logo-wrapper {
+                max-width: 315px;
+                margin: auto;
+                display: flex;
+                height: 17px;
+                margin-bottom: 48px;
+                justify-content: space-between;
+                align-items: center;
+                @media (min-width: 768px) {
+                    max-width: 536px;
+                    margin: 0;
+                }
+                .spotify {
+                    width: 56px;
+                    height: 17px;
+                    @media (min-width: 768px) {
+                        width: 96px;
+                        height: 29px;
+                    }
+                }
+                .apple {
+                    width: 45px;
+                    @media (min-width: 768px) {
+                        width: 78px;
+                        height: 29px;
+                    }
+                }
+                .google {
+                    width: 73px;
+                    height: 11px;
+                    @media (min-width: 768px) {
+                        width: 125px;
+                        height: 18px;
+                    }
+                }
+                .pocket {
+                    width: 77px;
+                    height: 15px;
+                    @media (min-width: 768px) {
+                        width: 129px;
+                        height: 26px;
+                    }
+                }
+            }
+        }
+        footer {
+            margin: 0 auto;
+            max-width: 326px;
+            @media (min-width: 768px) {
+                max-width: none;
+                position: relative;
+                width: 427px;
+                text-align: left;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 618px;
+                left: 39px;
+            }
+            @media (min-width: 1024px) {
+                left: 165px;
+            }
+            .error {
+                visibility: hidden;
+                color: $errorRed;
+                font-weight: bold;
+                font-size: 12px;
+                margin-top: 8px;
+                @media (min-width: 768px) {
+                    margin-left: 32px;
+                }
+            }
+            input {
+                margin-bottom: 16px;
+                background-color: $inputBackground;
+                border: none;
+                border-radius: 30px;
+                width: 326px;
+                height: 48px;
+                font-size: 14px;
+                line-height: 28px;
+                font-weight: bold;
+                padding-left: 32px;
+                color: $white;
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.5;
+                }
+                @media (min-width: 768px) {
+                    padding-left: 32px;
+                    margin: 0;
+                    width: 427px;
+                    height: 56px;
+                }
+            }
+            .submit {
+                cursor: pointer;
+                background-color: $titleGreen;
+                border-radius: 30px;
+                width: 326px;
+                height: 48px;
+                border: none;
+                color: $backgroundColor;
+                @media (min-width: 768px) {
+                    right: 5px;
+                    top: 5px;
+                    position: absolute;
+                    width: 162px;
+                    height: 46px;
+                    margin: 0;
+                    padding: 0;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-weight: bold;
+                }
+            }
+            .submit:hover {
+                background-color: $hoverGreen;
+            }
+        }
+    }
+}

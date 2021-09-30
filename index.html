@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <title>Pod request access landing page</title>
+    </head>
+    <body>
+        <div class="container">
+            <img
+                class="dots"
+                src="/assets/images/desktop/bg-pattern-dots.svg"
+                alt=""
+            />
+            <div class="host">
+                <img src="/assets/images/tablet/image-host.jpg" />
+            </div>
+            <div class="opacity"></div>
+            <img class="logo" src="/assets/images/desktop/logo.svg" alt="pod" />
+            <main>
+                <h1>Publish your podcasts <br /><span>everywhere.</span></h1>
+                <p>
+                    Upload your audio to Pod with a single click. We’ll then
+                    distribute your podcast to Spotify, Apple Podcasts, Google
+                    Podcasts, Pocket Casts and more!
+                </p>
+                <div class="logo-wrapper">
+                    <img
+                        class="spotify"
+                        src="assets/images/desktop/spotify.svg"
+                    />
+                    <img
+                        class="apple"
+                        src="assets/images/desktop/apple-podcast.svg"
+                    />
+                    <img
+                        class="google"
+                        src="assets/images/desktop/google-podcasts.svg"
+                    />
+                    <img
+                        class="pocket"
+                        src="assets/images/desktop/pocket-casts.svg"
+                    />
+                </div>
+            </main>
+            <footer>
+                <form action="">
+                    <input
+                        class="email"
+                        required
+                        type="email"
+                        placeholder="Email address"
+                        aria-label="Enter your email address"
+                    />
+                    <button class="submit" onclick="validateEmail()">
+                        <p>Request Access</p>
+                    </button>
+                </form>
+                <p class="error">Oops! Please add your email</p>
+            </footer>
+        </div>
+    </body>
+    <script src="app.js"></script>
+</html>
