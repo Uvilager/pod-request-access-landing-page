@@ -142,6 +142,26 @@ body .container footer input {
   color: #ffffff;
 }
 
+body .container footer input::-webkit-input-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+body .container footer input:-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+body .container footer input::-ms-input-placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+body .container footer input::placeholder {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
 body .container footer .submit {
   cursor: pointer;
   background-color: #54e6af;

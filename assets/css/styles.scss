@@ -109,6 +109,10 @@ body {
                 font-weight: bold;
                 padding-left: 32px;
                 color: $white;
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.5;
+                }
             }
             .submit {
                 cursor: pointer;
