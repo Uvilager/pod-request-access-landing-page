@@ -35,16 +35,88 @@ body .container {
   background-size: cover;
 }
 
+@media (min-width: 768px) {
+  body .container {
+    max-height: 1024px;
+    position: relative;
+    background-image: none;
+    background: #121725;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container {
+    max-width: 1440px;
+    max-height: 900px;
+  }
+  body .container h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+}
+
 body .container .dots {
   display: none;
+}
+
+@media (min-width: 768px) {
+  body .container .dots {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container .dots {
+    bottom: 78px;
+    left: auto;
+    right: 0;
+  }
 }
 
 body .container .host {
   display: none;
 }
 
+@media (min-width: 768px) {
+  body .container .host {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container .host {
+    top: 130px;
+  }
+  body .container .host img {
+    content: url("/assets/images/desktop/image-host.jpg");
+  }
+}
+
 body .container .logo {
   margin: 62px auto 57px auto;
+}
+
+@media (min-width: 768px) {
+  body .container .logo {
+    margin: 0;
+    top: 50px;
+    left: 39px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container .logo {
+    top: 102px;
+    left: 165px;
+  }
 }
 
 body .container .opacity {
@@ -55,6 +127,31 @@ body .container .opacity {
   height: 100%;
   width: 100%;
   background: rgba(18, 23, 37, 0.9);
+}
+
+@media (min-width: 768px) {
+  body .container .opacity {
+    background: none;
+  }
+}
+
+@media (min-width: 768px) {
+  body .container main {
+    padding-top: 93px;
+    height: 510px;
+    width: 635px;
+    background: #121725;
+    text-align: left;
+    margin-top: 258px;
+    margin-left: 39px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container main {
+    margin-left: 165px;
+    margin-top: 262px;
+  }
 }
 
 body .container main h1 {
@@ -71,6 +168,15 @@ body .container main h1 span {
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  body .container main h1 {
+    margin-bottom: 31px;
+    font-size: 48px;
+    line-height: 56px;
+    padding: 0;
+  }
+}
+
 body .container main p {
   font-weight: lighter;
   padding: 0 24px;
@@ -78,6 +184,16 @@ body .container main p {
   font-size: 15px;
   color: #c2cbe5;
   margin-bottom: 33px;
+}
+
+@media (min-width: 768px) {
+  body .container main p {
+    width: 445px;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0;
+    margin-bottom: 160px;
+  }
 }
 
 body .container main .logo-wrapper {
@@ -96,13 +212,34 @@ body .container main .logo-wrapper {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  body .container main .logo-wrapper {
+    max-width: 536px;
+    margin: 0;
+  }
+}
+
 body .container main .logo-wrapper .spotify {
   width: 56px;
   height: 17px;
 }
 
+@media (min-width: 768px) {
+  body .container main .logo-wrapper .spotify {
+    width: 96px;
+    height: 29px;
+  }
+}
+
 body .container main .logo-wrapper .apple {
   width: 45px;
+}
+
+@media (min-width: 768px) {
+  body .container main .logo-wrapper .apple {
+    width: 78px;
+    height: 29px;
+  }
 }
 
 body .container main .logo-wrapper .google {
@@ -110,14 +247,48 @@ body .container main .logo-wrapper .google {
   height: 11px;
 }
 
+@media (min-width: 768px) {
+  body .container main .logo-wrapper .google {
+    width: 125px;
+    height: 18px;
+  }
+}
+
 body .container main .logo-wrapper .pocket {
   width: 77px;
   height: 15px;
 }
 
+@media (min-width: 768px) {
+  body .container main .logo-wrapper .pocket {
+    width: 129px;
+    height: 26px;
+  }
+}
+
 body .container footer {
   margin: 0 auto;
   max-width: 326px;
+}
+
+@media (min-width: 768px) {
+  body .container footer {
+    max-width: none;
+    position: relative;
+    width: 427px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 618px;
+    left: 39px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body .container footer {
+    left: 165px;
+  }
 }
 
 body .container footer .error {
@@ -126,6 +297,12 @@ body .container footer .error {
   font-weight: bold;
   font-size: 12px;
   margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  body .container footer .error {
+    margin-left: 32px;
+  }
 }
 
 body .container footer input {
@@ -162,6 +339,15 @@ body .container footer input::placeholder {
   opacity: 0.5;
 }
 
+@media (min-width: 768px) {
+  body .container footer input {
+    padding-left: 32px;
+    margin: 0;
+    width: 427px;
+    height: 56px;
+  }
+}
+
 body .container footer .submit {
   cursor: pointer;
   background-color: #54e6af;
@@ -172,107 +358,7 @@ body .container footer .submit {
   color: #121725;
 }
 
-body .container footer .submit p {
-  font-size: 14px;
-  line-height: 28px;
-  font-weight: bold;
-}
-
-body .container footer .submit:hover {
-  background-color: #b3ffe2;
-}
-
 @media (min-width: 768px) {
-  body .container {
-    max-height: 1024px;
-    position: relative;
-    background-image: none;
-    background: #121725;
-  }
-  body .container .error {
-    margin-left: 32px;
-  }
-  body .container .dots {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    left: 30px;
-  }
-  body .container .opacity {
-    background: none;
-  }
-  body .container .host {
-    z-index: -1;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  body .container .logo {
-    margin: 0;
-    top: 50px;
-    left: 39px;
-    position: absolute;
-  }
-  body .container main {
-    padding-top: 93px;
-    height: 510px;
-    width: 635px;
-    background: #121725;
-    text-align: left;
-    margin-top: 258px;
-    margin-left: 39px;
-  }
-  body .container main h1 {
-    margin-bottom: 31px;
-    font-size: 48px;
-    line-height: 56px;
-    padding: 0;
-  }
-  body .container main p {
-    width: 445px;
-    font-size: 18px;
-    line-height: 28px;
-    padding: 0;
-    margin-bottom: 160px;
-  }
-  body .container main .logo-wrapper {
-    max-width: 536px;
-    margin: 0;
-  }
-  body .container main .logo-wrapper .spotify {
-    width: 96px;
-    height: 29px;
-  }
-  body .container main .logo-wrapper .apple {
-    width: 78px;
-    height: 29px;
-  }
-  body .container main .logo-wrapper .google {
-    width: 125px;
-    height: 18px;
-  }
-  body .container main .logo-wrapper .pocket {
-    width: 129px;
-    height: 26px;
-  }
-  body .container footer {
-    max-width: none;
-    position: relative;
-    width: 427px;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 618px;
-    left: 39px;
-  }
-  body .container footer input {
-    padding-left: 32px;
-    margin: 0;
-    width: 427px;
-    height: 56px;
-  }
   body .container footer .submit {
     right: 5px;
     top: 5px;
@@ -284,36 +370,13 @@ body .container footer .submit:hover {
   }
 }
 
-@media (min-width: 1024px) {
-  body .container {
-    max-width: 1440px;
-    max-height: 900px;
-  }
-  body .container h1 {
-    font-size: 52px;
-    line-height: 62px;
-  }
-  body .container .dots {
-    bottom: 78px;
-    left: auto;
-    right: 0;
-  }
-  body .container .logo {
-    top: 102px;
-    left: 165px;
-  }
-  body .container .host {
-    top: 130px;
-  }
-  body .container .host img {
-    content: url("/assets/images/desktop/image-host.jpg");
-  }
-  body .container main {
-    margin-left: 165px;
-    margin-top: 262px;
-  }
-  body .container footer {
-    left: 165px;
-  }
+body .container footer .submit p {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+body .container footer .submit:hover {
+  background-color: #b3ffe2;
 }
 /*# sourceMappingURL=styles.css.map */
